@@ -1,0 +1,50 @@
+# Book Ideas Brainstorming: Operation Manual
+
+このフォルダは、CLI型LLM（Claude Code / Gemini CLI）との「次に何の本を書くか」を決めるためのワークスペースです。
+
+**注意:** ここは「どの本を書くか」を決める場所です。決まったら `book-contents-think` に移動してテーマを深掘りしてください。
+
+## 必須ファイル構成
+
+* `project_rules.md`: AIへの役割定義・運用ルール
+* `ideas-hub.md`: アイデアの集積地
+* `workflow.md`: 全体の流れ
+
+---
+
+## セッションの始め方 (Start Routine)
+
+```bash
+/read project_rules.md ideas-hub.md
+```
+
+```text
+project_rules.md の BOOT BLOCK に従い、セッションを開始してください。
+[Mode: Brainstorm] でお願いします。
+```
+
+---
+
+## 運用コマンド (Operational Commands)
+
+| コマンド | 動作 | 使うタイミング |
+| :--- | :--- | :--- |
+| `/brainstorm` | **Brainstorm Mode** へ切替 | アイデアを発散させたいとき（デフォルト） |
+| `/evaluate` | **Evaluator Mode** へ切替 | アイデアを評価・比較したいとき |
+| `/decide` | **Decision Mode** へ切替 | 優先度を決めて「次に書くもの」を選ぶとき |
+| `/archive` | **Archivist Mode** へ切替 | セッション終了時、hubを更新するとき |
+| `/status` | ステータス確認 | 現在のモードや進捗を確認したいとき |
+
+---
+
+## 終了時の作法 (End Routine)
+
+1. `/archive` でhubを更新
+2. 「次に書く本」が決まったら、`book-contents-think` にコピーして深掘りを開始
+
+---
+
+## Tips
+* 書きたいことは質より量。最初は判断せずに出し切る。
+* 「自分に書けるか」は後で考える。まずは「書きたいか」。
+* 決まったテーマは `book-contents-think` に持っていく。
