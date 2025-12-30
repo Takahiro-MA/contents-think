@@ -1,8 +1,10 @@
-# AI Co-Authoring Project: Operation Manual
- 
-このフォルダは、CLI型LLM（Claude Code / Gemini CLI）との共著プロジェクト用のワークスペースです。
+# AI Co-Authoring Project: Operation Manual (Web版)
 
-## 📂 必須ファイル構成
+このフォルダは、**Claude Code on the Web** との書籍共著プロジェクト用のワークスペースです。
+
+> **注意**: これはWeb版に最適化されたテンプレートです。CLI版は `CLI/templates/book-contents-think/` にあります。
+
+## 必須ファイル構成
 開始前に以下のファイルが存在することを確認してください。
 
 * `project_rules.md`: AIへの役割定義・運用ルール（憲法）
@@ -11,53 +13,77 @@
 
 ---
 
-## 🚀 セッションの始め方 (Start Routine)
+## セッションの始め方 (Start Routine)
 
-ターミナルでこのディレクトリに移動し、ツール（Claude Code等）を起動した後、**必ず以下の手順を実行してください。**
+Web版では、GitHubリポジトリから直接セッションを開始します。
 
-### 1. コンテキストの読み込み
-まず、ルールと現状をAIのメモリに入れます。以下のコマンドを入力：
+### 1. セッション開始コマンド
+リポジトリのルートから、以下のカスタムコマンドを実行：
 
 ```bash
-/read project_rules.md thinking-hub.md
+/book-start
 ```
 
-### 2. ブートアップ宣言（コピペ用）
-読み込み完了後、以下のプロンプトをコピペして送信し、モードを確定させます。
+このコマンドは自動的に以下を実行します：
+- `project_rules.md` と `thinking-hub.md` の読み込み
+- Sparring Mode での起動
+- 今日のテーマの確認
+
+### 2. 手動で開始する場合（コマンド未設定時）
+カスタムコマンドが設定されていない場合は、以下を手動で実行：
 
 ```text
-project_rules.md の BOOT BLOCK に従い、セッションを開始してください。
+OTW/workspace/[プロジェクト名]/project_rules.md と thinking-hub.md を読み込んで、
+project_rules.md の BOOT BLOCK に従いセッションを開始してください。
 今日のテーマは「[ここに今日のテーマを入れる]」です。
 [Mode: Sparring] でお願いします。
 ```
 
 ---
 
-## 🕹️ 運用コマンド (Operational Commands)
+## 運用コマンド (Operational Commands)
 
-会話中に使用する主な制御コマンドです（`project_rules.md` で定義済み）。
+会話中に使用する主な制御コマンドです。
 
 | コマンド | 動作 | 使うタイミング |
 | :--- | :--- | :--- |
-| `/sparring` | **Sparring Mode** へ切替 | 議論・壁打ちをしたいとき（デフォルト） |
-| `/archive` | **Archivist Mode** へ切替 | 議論終了後、`thinking-hub.md` を更新して終わるとき |
-| `/edit` | **Editor Mode** へ切替 | まとまった章の構成案や本文を書かせるとき |
-| `/status` | ステータス確認 | 現在のモードや読み込み済みファイルを確認したいとき |
+| `/book-start` | プロジェクト開始 | セッション開始時 |
+| `/sparring` | **Sparring Mode** へ切替 | 議論・壁打ちをしたいとき |
+| `/architect` | **Architect Mode** へ切替 | 章構成や全体設計を詰めるとき |
+| `/archive` | **Archivist Mode** へ切替 | 議論終了後、`thinking-hub.md` を更新するとき |
+
+> **Note**: カスタムコマンドは `.claude/commands/` で定義されています。
 
 ---
 
-## 📝 終了時の作法 (End Routine)
+## 終了時の作法 (End Routine)
 
-セッションを終えるときは、必ず **Archivist Mode** でログを残してから終了してください。
+Web版では、変更をGitHubにpushして終了します。
 
-1.  議論が一段落する。
-2.  コマンド `/archive` を入力（または「Archivistモードでハブを更新して」と指示）。
-3.  AIが `thinking-hub.md` の更新案と `log/` ファイルの作成案を提示。
-4.  内容を確認して承認（Y）。
-5.  更新完了を確認してツールを終了（`exit` / `Ctrl+C`）。
+1. 議論が一段落する
+2. `/archive` または「Archivistモードでthinking-hub.mdを更新して」と指示
+3. AIが `thinking-hub.md` の更新案を提示
+4. 内容を確認して承認
+5. **変更をcommit & push**（AIが実行）
+6. セッションを終了
 
 ---
 
-## 💡 Tips
-* **`thinking-hub.md` は手動で修正してもOKです。** 人間の直感で「ここは違う」と思った箇所は、セッション外で直接エディタで修正・削除してください。
-* 久しぶりに再開する場合は、`thinking-hub.md` の最下部にある **「8. Next Discussion Candidates」** を見てテーマを決めるとスムーズです。
+## Web版の特徴
+
+### ✅ メリット
+- GitHubと自動連携で変更履歴が残る
+- ブラウザからどこでもアクセス可能
+- commit/pushが自動化される
+
+### ⚠️ 注意点
+- セッションをまたぐとコンテキストが薄れる（自動要約あり）
+- 長期プロジェクトは1セッション1テーマを推奨
+- モード切替は明示的に指示する必要あり
+
+---
+
+## Tips
+* **1セッション1テーマ**: Web版は短時間集中型が最適です
+* **thinking-hub.mdは手動編集OK**: 直接GitHubで編集してもOK
+* **Next Discussion Candidates**: `thinking-hub.md` の最下部を見て次のテーマを決定
