@@ -1,0 +1,26 @@
+# Workspace directories (実作業フォルダは除外)
+CLI/workspace/*
+!CLI/workspace/README.md
+
+OTW/workspace/*
+!OTW/workspace/README.md
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.log
