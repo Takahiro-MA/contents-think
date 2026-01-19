@@ -9,6 +9,21 @@
 * `thinking-hub.md`: 思考の庭（Wiki）
 * `workflow.md`: 全体のロードマップ
 
+## Skills（推奨）
+
+`~/.claude/skills/` にSkillsがセットアップされている場合、自然言語で専門スキルを呼び出せます。
+
+| 呼び出しワード | Skill | 説明 |
+|:---|:---|:---|
+| 「壁打ちしよう」「批判的に見て」 | sparring | 建設的な批判と提案 |
+| 「アイデア出して」「ブレスト」 | brainstorm | アイデア発散 |
+| 「設計を考えて」「アーキテクチャ」 | architect | 技術設計 |
+| 「評価して」「比較して」 | evaluate | 選択肢の評価 |
+| 「仕様書にまとめて」 | spec-writer | ドキュメント化 |
+| 「決めよう」「優先度を」 | decide | 意思決定支援 |
+
+Skillsは文脈に応じてClaudeが自動判断してロードします。
+
 ---
 
 ## セッションの始め方 (Start Routine)
@@ -44,6 +59,15 @@ project_rules.md の BOOT BLOCK に従い、セッションを開始してくだ
 | `/architect` | **Architect Mode** へ切替 | 設計案や技術選定を詰めるとき |
 | `/spec` | **Spec Writer Mode** へ切替 | 要件定義書や仕様書を書かせるとき |
 | `/status` | ステータス確認 | 現在のモードや読み込み済みファイルを確認したいとき |
+
+### Skills vs Slash Commands
+
+| 方式 | 呼び出し方 | 特徴 |
+| :--- | :--- | :--- |
+| **Skills** | 自然言語（「壁打ちしよう」など） | Claudeが自動判断してロード |
+| **Slash Commands** | `/archive` など | 明示的に実行タイミングを制御 |
+
+通常の議論・設計はSkillsで自然に呼び出し、ファイル保存（`/archive`）など確実に実行したい操作はSlash Commandsを使うのが推奨です。
 
 ---
 
