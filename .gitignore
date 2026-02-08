@@ -1,7 +1,5 @@
-# Workspace directories (実作業フォルダは除外)
-CLI/workspace/*
-!CLI/workspace/README.md
-
+# Workspace directories
+# CLI/workspace: 成果物（執筆仕様書等）はgit管理対象
 OTW/workspace/*
 !OTW/workspace/README.md
 
