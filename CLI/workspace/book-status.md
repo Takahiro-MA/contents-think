@@ -3,7 +3,7 @@
 > 全書籍のthinking-hub（執筆仕様書）と執筆状態を一覧管理するファイル。
 > 状態が変わったら都度更新すること。
 
-Last Updated: 2026-02-19
+Last Updated: 2026-03-19
 
 ---
 
@@ -36,6 +36,16 @@ Last Updated: 2026-02-19
 | 7 | Linux/CLI | `linux-cli/` | 9 | Phase 1R | thinking-hubレビュー済み。執筆可能 |
 | 8 | レガシーコード改善 | `legacy-code/` | 8 | Phase 1R | thinking-hubレビュー済み。執筆可能 |
 | — | AI仕事術 | `ai-work-style/` | — | NO-GO | Claude Code本と重複。出版予定なし |
+| — | Codex CLI | `codex-cli/` | 8 | Phase 1R | thinking-hubレビュー済み。Codex本 |
+
+---
+
+## ゲーム理論シリーズ（全2冊）
+
+| # | テーマ | ディレクトリ | 章数 | Phase | 備考 |
+|---|--------|------------|------|-------|------|
+| A | ビジネスパーソン向けゲーム理論入門 | `game-theory/` | — | Phase 0 | 広い市場向け。先行出版予定 |
+| B | IT現場の構造分析 | `game-theory/` | — | Phase 0 | 深い市場向け。Book Aからの送客 |
 
 ### 出版済み（thinking-hubなし）
 
@@ -71,10 +81,11 @@ Last Updated: 2026-02-19
 
 ## 統計
 
-- thinking-hub総数: 12（うちNO-GO 1）
-- 執筆可能（Phase 1R）: 10冊
+- thinking-hub総数: 13（うちNO-GO 1）
+- 執筆可能（Phase 1R）: 11冊
+- 企画段階（Phase 0）: 2冊（ゲーム理論シリーズ）
 - 出版済み: 6冊（thinking-hubフレームワーク導入前含む）
-- thinking-hub合計行数: 約12,000行
+- thinking-hub合計行数: 約13,100行
 - 1冊あたり平均: 約1,000行 / 16セクション
 
 ---
