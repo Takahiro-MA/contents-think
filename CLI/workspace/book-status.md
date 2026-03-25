@@ -3,7 +3,7 @@
 > 全書籍のthinking-hub（執筆仕様書）と執筆状態を一覧管理するファイル。
 > 状態が変わったら都度更新すること。
 
-Last Updated: 2026-03-19
+Last Updated: 2026-03-25
 
 ---
 
@@ -31,9 +31,9 @@ Last Updated: 2026-03-19
 | 2 | キャリアピボット | `career-pivot/` | 10 | Phase 1R（保留） | 主人公が中村さん。著者の熱量確認待ち |
 | 3 | 睡眠改善 | `sleep-improvement/` | 8 | Phase 1R | thinking-hubレビュー済み。執筆可能 |
 | 4 | デジタルデトックス | `digital-detox/` | 8 | Phase 1R | thinking-hubレビュー済み。執筆可能 |
-| 5 | Obsidian/PKM | `obsidian/` | 8 | Phase 1R | thinking-hubレビュー済み。執筆可能 |
+| 5 | Obsidian/PKM | `obsidian/` | 8 | Phase 5 | 初稿執筆済み。著者レビュー24件 修正待ち。`../kindle2/08_obsidian-book/epub/` |
 | 6 | SQL | `sql/` | 9 | Phase 1R | thinking-hubレビュー済み。執筆可能 |
-| 7 | Linux/CLI | `linux-cli/` | 9 | Phase 1R | thinking-hubレビュー済み。執筆可能 |
+| 7 | Linux/CLI | `linux-cli/` | 9 | Phase 5 | 初稿執筆済み。著者レビュー20件 一部未対応。`../kindle2/07_linux-cli-book/epub/` |
 | 8 | レガシーコード改善 | `legacy-code/` | 8 | Phase 1R | thinking-hubレビュー済み。執筆可能 |
 | — | AI仕事術 | `ai-work-style/` | — | NO-GO | Claude Code本と重複。出版予定なし |
 | — | Codex CLI | `codex-cli/` | 8 | Phase 1R | thinking-hubレビュー済み。Codex本 |
@@ -62,7 +62,7 @@ Last Updated: 2026-03-19
 
 | # | テーマ | ディレクトリ | 章数 | Phase | 備考 |
 |---|--------|------------|------|-------|------|
-| 1 | 断酒 | `sobriety/` | 8 | Phase 1R | thinking-hubレビュー済み。執筆可能。`../kindle2/06_sobriety-book/epub/` にepub枠あり |
+| 1 | 断酒 | `sobriety/` | 8 | Phase 3待ち | 初稿執筆済み（全10ファイル/3,291行）。レビュー未実施。`../kindle2/06_sobriety-book/epub/` |
 | 2 | 食事改善 | `food-improvement/` | 8 | Phase 1R | thinking-hubレビュー済み。執筆可能 |
 | 3 | ストレスマネジメント | `stress-management/` | 8 | Phase 1R | thinking-hubレビュー済み。執筆可能 |
 
