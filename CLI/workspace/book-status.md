@@ -34,13 +34,13 @@ Last Updated: 2026-03-25
 | 3 | アジャイル | — | `../kindle2/03_agile-book/epub/` | Published。thinking-hubフレームワーク導入前 |
 | 4 | TDD | — | `../kindle2/04_tdd-book/epub/` | Published。レガシーコード本の前日譚。review-log.mdあり |
 | 5 | Claude Code | `claude-code/` | `../kindle2/05_claudecode/epub/` | Published |
+| 6 | Linux/CLI | `linux-cli/` | `../kindle2/07_linux-cli-book/epub/` | Published。review-log.mdあり |
 
 ### 執筆進行中
 
 | # | テーマ | thinking-hub | 章数 | Phase | 出版先 | 備考 |
 |---|--------|-------------|------|-------|-------|------|
-| 6 | Obsidian/PKM | `obsidian/` | 8 | Phase 5 | `../kindle2/08_obsidian-book/epub/` | 著者レビュー24件 修正待ち。review-log.md + review-analysis.mdあり |
-| 7 | Linux/CLI | `linux-cli/` | 9 | Phase 5 | `../kindle2/07_linux-cli-book/epub/` | 著者レビュー20件 一部未対応。review-log.mdあり |
+| 7 | Obsidian/PKM | `obsidian/` | 8 | Phase 5 | `../kindle2/08_obsidian-book/epub/` | 著者レビュー24件 修正待ち。review-log.md + review-analysis.mdあり |
 
 ### thinking-hub作成済み（初稿未着手）
 
@@ -115,8 +115,8 @@ Last Updated: 2026-03-25
 - その他: 4件（Ruby, 釣りマンガ, LLM理論書, サンプル）
 
 ### Phase別
-- Published: 5冊
-- Phase 5（著者レビュー中）: 2冊（Obsidian, Linux CLI）
+- Published: 6冊
+- Phase 5（著者レビュー中）: 1冊（Obsidian）
 - Phase 3待ち（レビュー未実施）: 1冊（断酒）
 - Phase 1R（執筆可能）: 7冊
 - Phase 0（企画段階）: 2冊
