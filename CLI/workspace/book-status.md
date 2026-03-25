@@ -23,48 +23,75 @@ Last Updated: 2026-03-25
 
 ---
 
-## 田中さんシリーズ（全9冊）
+## 田中さんシリーズ
 
-| # | テーマ | ディレクトリ | 章数 | Phase | 備考 |
-|---|--------|------------|------|-------|------|
-| 1 | Git/GitHub | — | 10 | Published | `../kindle2/01_git-github-book/epub/` |
-| 2 | キャリアピボット | `career-pivot/` | 10 | Phase 1R（保留） | 主人公が中村さん。著者の熱量確認待ち |
-| 3 | 睡眠改善 | `sleep-improvement/` | 8 | Phase 1R | thinking-hubレビュー済み。執筆可能 |
-| 4 | デジタルデトックス | `digital-detox/` | 8 | Phase 1R | thinking-hubレビュー済み。執筆可能 |
-| 5 | Obsidian/PKM | `obsidian/` | 8 | Phase 5 | 初稿執筆済み。著者レビュー24件 修正待ち。`../kindle2/08_obsidian-book/epub/` |
-| 6 | SQL | `sql/` | 9 | Phase 1R | thinking-hubレビュー済み。執筆可能 |
-| 7 | Linux/CLI | `linux-cli/` | 9 | Phase 5 | 初稿執筆済み。著者レビュー20件 一部未対応。`../kindle2/07_linux-cli-book/epub/` |
-| 8 | レガシーコード改善 | `legacy-code/` | 8 | Phase 1R | thinking-hubレビュー済み。執筆可能 |
+### 出版済み
+
+| # | テーマ | thinking-hub | 出版先 | 備考 |
+|---|--------|-------------|-------|------|
+| 1 | Git/GitHub | — | `../kindle2/01_git-github-book/epub/` | Published。thinking-hubフレームワーク導入前 |
+| 2 | Docker | — | `../kindle2/02_docker-book/epub/` | Published。thinking-hubフレームワーク導入前 |
+| 3 | アジャイル | — | `../kindle2/03_agile-book/epub/` | Published。thinking-hubフレームワーク導入前 |
+| 4 | TDD | — | `../kindle2/04_tdd-book/epub/` | Published。レガシーコード本の前日譚。review-log.mdあり |
+| 5 | Claude Code | `claude-code/` | `../kindle2/05_claudecode/epub/` | Published |
+
+### 執筆進行中
+
+| # | テーマ | thinking-hub | 章数 | Phase | 出版先 | 備考 |
+|---|--------|-------------|------|-------|-------|------|
+| 6 | Obsidian/PKM | `obsidian/` | 8 | Phase 5 | `../kindle2/08_obsidian-book/epub/` | 著者レビュー24件 修正待ち。review-log.md + review-analysis.mdあり |
+| 7 | Linux/CLI | `linux-cli/` | 9 | Phase 5 | `../kindle2/07_linux-cli-book/epub/` | 著者レビュー20件 一部未対応。review-log.mdあり |
+
+### thinking-hub作成済み（初稿未着手）
+
+| # | テーマ | thinking-hub | 章数 | Phase | 備考 |
+|---|--------|-------------|------|-------|------|
+| 8 | 睡眠改善 | `sleep-improvement/` | 8 | Phase 1R | 執筆可能 |
+| 9 | デジタルデトックス | `digital-detox/` | 8 | Phase 1R | 執筆可能 |
+| 10 | SQL | `sql/` | 9 | Phase 1R | 執筆可能 |
+| 11 | レガシーコード改善 | `legacy-code/` | 8 | Phase 1R | TDD本の続編的位置づけ。執筆可能 |
+| 12 | Codex CLI | `codex-cli/` | 8 | Phase 1R | 執筆可能 |
+| 13 | キャリアピボット | `career-pivot/` | 10 | Phase 1R（保留） | 主人公が中村さん。著者の熱量確認待ち |
 | — | AI仕事術 | `ai-work-style/` | — | NO-GO | Claude Code本と重複。出版予定なし |
-| — | Codex CLI | `codex-cli/` | 8 | Phase 1R | thinking-hubレビュー済み。Codex本 |
+
+### フレームワーク導入前の初稿（thinking-hubなし）
+
+| # | テーマ | 出版先 | ファイル数 | 行数 | 主人公 | 備考 |
+|---|--------|-------|-----------|------|--------|------|
+| X4 | ゆるプログラミング入門 | `../kindle2/X4_yuru-programming-book/epub/` | 15 | 5,602 | 田中さん（営業部3年→プログラミング学習） | 2週間の学習物語。Phase未定 |
+| X5 | タイムマネジメント | `../kindle2/X5_time-management-book/epub/` | 12 | 3,190 | 田中さん（残業→定時退社へ） | 山田さんがメンター。Phase未定 |
+| X6 | 副業開始物語 | `../kindle2/X6_side-business-book/epub/` | 12 | 2,900 | 田中さん（32歳、月収28万） | 月5万副収入。ブログ/Kindle/個人開発。Phase未定 |
+| X7 | ウォーターフォール開発 | `../kindle2/X7_waterfall-book/epub/` | 12 | 2,558 | 田中さん（SIer転職） | アジャイル→WF体験。Phase未定 |
 
 ---
 
-## ゲーム理論シリーズ（全2冊）
+## 藤井さんシリーズ
+
+| # | テーマ | thinking-hub | 章数 | Phase | 出版先 | 備考 |
+|---|--------|-------------|------|-------|-------|------|
+| 1 | 断酒 | `sobriety/` | 8 | Phase 3待ち | `../kindle2/06_sobriety-book/epub/` | 初稿執筆済み（10ファイル/3,291行）。レビュー未実施 |
+| 2 | 食事改善 | `food-improvement/` | 8 | Phase 1R | — | thinking-hubレビュー済み。執筆可能 |
+| 3 | ストレスマネジメント | `stress-management/` | 8 | Phase 1R | — | thinking-hubレビュー済み。執筆可能 |
+
+---
+
+## ゲーム理論シリーズ
 
 | # | テーマ | ディレクトリ | 章数 | Phase | 備考 |
 |---|--------|------------|------|-------|------|
 | A | ビジネスパーソン向けゲーム理論入門 | `game-theory/` | — | Phase 0 | 広い市場向け。先行出版予定 |
 | B | IT現場の構造分析 | `game-theory/` | — | Phase 0 | 深い市場向け。Book Aからの送客 |
 
-### 出版済み（thinking-hubなし）
-
-| # | テーマ | 出版先 | 備考 |
-|---|--------|-------|------|
-| — | Docker | `../kindle2/02_docker-book/epub/` | thinking-hubフレームワーク導入前 |
-| — | アジャイル | `../kindle2/03_agile-book/epub/` | 同上 |
-| — | TDD | `../kindle2/04_tdd-book/epub/` | レガシーコード本の前日譚的位置づけ |
-| — | Claude Code | `../kindle2/05_claudecode/epub/` | thinking-hub: `claude-code/` |
-
 ---
 
-## 藤井さんシリーズ（全3冊）
+## その他（非シリーズ・企画段階・サンプル）
 
-| # | テーマ | ディレクトリ | 章数 | Phase | 備考 |
-|---|--------|------------|------|-------|------|
-| 1 | 断酒 | `sobriety/` | 8 | Phase 3待ち | 初稿執筆済み（全10ファイル/3,291行）。レビュー未実施。`../kindle2/06_sobriety-book/epub/` |
-| 2 | 食事改善 | `food-improvement/` | 8 | Phase 1R | thinking-hubレビュー済み。執筆可能 |
-| 3 | ストレスマネジメント | `stress-management/` | 8 | Phase 1R | thinking-hubレビュー済み。執筆可能 |
+| ディレクトリ | テーマ | 状態 | 備考 |
+|-------------|--------|------|------|
+| `../kindle2/X1_ruby-on-rails-book/` | Ruby on Rails入門 | 初稿あり（非物語型） | book1+book2の2構成。田中さんシリーズではない |
+| `../kindle2/X2_fishing-manga/` | 釣りマンガ | プロット段階 | 主人公: 潮見なみ（大学2年）。キャラ設定+序章プロットのみ |
+| `../kindle2/X3_LLM_in_office/` | 企業の生成AI活用 | thinking-hubあり | 理論書型（非物語）。セッションログ4件あり |
+| `../kindle2/XX_sample-books/` | サンプルテンプレート | 参考用 | Go言語(3,891行)、Spring Boot(5,015行)のサンプル書籍 |
 
 ---
 
@@ -81,10 +108,23 @@ Last Updated: 2026-03-25
 
 ## 統計
 
+### シリーズ別
+- 田中さんシリーズ: 出版済み5冊 + 執筆中2冊 + hub済み6冊（うちNO-GO 1, 保留1） + 旧作4冊
+- 藤井さんシリーズ: 初稿済み1冊 + hub済み2冊
+- ゲーム理論シリーズ: 企画段階2冊
+- その他: 4件（Ruby, 釣りマンガ, LLM理論書, サンプル）
+
+### Phase別
+- Published: 5冊
+- Phase 5（著者レビュー中）: 2冊（Obsidian, Linux CLI）
+- Phase 3待ち（レビュー未実施）: 1冊（断酒）
+- Phase 1R（執筆可能）: 7冊
+- Phase 0（企画段階）: 2冊
+- NO-GO: 1冊
+- Phase未定（旧作）: 4冊（X4〜X7）
+
+### thinking-hub
 - thinking-hub総数: 13（うちNO-GO 1）
-- 執筆可能（Phase 1R）: 11冊
-- 企画段階（Phase 0）: 2冊（ゲーム理論シリーズ）
-- 出版済み: 6冊（thinking-hubフレームワーク導入前含む）
 - thinking-hub合計行数: 約13,100行
 - 1冊あたり平均: 約1,000行 / 16セクション
 
