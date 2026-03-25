@@ -9,19 +9,23 @@
 ## 全体フロー
 
 ```
-Phase 0: テーマ検証（出す前に「出すべきか」を問う）
+Phase 0:  テーマ検証（出す前に「出すべきか」を問う）
     ↓ GO判断
-Phase 1: thinking-hub作成（← ここが品質の8割を決める）
+Phase 1:  thinking-hub作成（← ここが品質の8割を決める）
     ↓
-Phase 2: 初稿の並列執筆（Subagent 5+5+2バッチ）
+Phase 1R: thinking-hub Claudeレビュー & 修正反映（/review-thinkinghub）
     ↓
-Phase 3: 3視点レビュー
+Phase 1A: thinking-hub 著者レビュー & 承認（著者が通読し、方向性・設定を最終確認）
     ↓
-Phase 4: 修正反映（技術エラー → 文体 → 改善提案の順）
+Phase 2:  初稿の並列執筆（Subagent 5+5+2バッチ）
     ↓
-Phase 5: 著者レビュー & 対話的修正（必要に応じて数周）
+Phase 3:  3視点レビュー（/review-book）
     ↓
-Phase 6: 最終バランスチェック & 完成
+Phase 4:  修正反映（/fix-review。技術エラー → 文体 → 改善提案の順）
+    ↓
+Phase 5:  著者レビュー & 対話的修正（必要に応じて数周）
+    ↓
+Phase 6:  最終バランスチェック & 完成
 ```
 
 ---

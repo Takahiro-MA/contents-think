@@ -13,10 +13,11 @@ Last Updated: 2026-03-25
 |-------|------|
 | Phase 0 | テーマ検証（GO / NO-GO / 保留） |
 | Phase 1 | thinking-hub作成 |
-| Phase 1R | thinking-hubレビュー＆修正反映済み |
+| Phase 1R | thinking-hub Claudeレビュー＆修正反映（/review-thinkinghub） |
+| Phase 1A | thinking-hub 著者レビュー＆承認（著者が通読し方向性・設定を最終確認） |
 | Phase 2 | 初稿の並列執筆 |
-| Phase 3 | 3視点レビュー |
-| Phase 4 | レビュー修正反映 |
+| Phase 3 | 3視点Claudeレビュー（/review-book） |
+| Phase 4 | レビュー修正反映（/fix-review） |
 | Phase 5 | 著者レビュー＆対話的修正 |
 | Phase 6 | 最終バランスチェック＆完成 |
 | Published | Kindle出版済み |
@@ -46,12 +47,12 @@ Last Updated: 2026-03-25
 
 | # | テーマ | thinking-hub | 章数 | Phase | 通過済み | 備考 |
 |---|--------|-------------|------|-------|---------|------|
-| 8 | 睡眠改善 | `sleep-improvement/` | 8 | Phase 1R | 1→**1R** | 執筆可能 |
-| 9 | デジタルデトックス | `digital-detox/` | 8 | Phase 1R | 1→**1R** | 執筆可能 |
-| 10 | SQL | `sql/` | 9 | Phase 1R | 1→**1R** | 執筆可能 |
-| 11 | レガシーコード改善 | `legacy-code/` | 8 | Phase 1R | 1→**1R** | TDD本の続編的位置づけ。執筆可能 |
-| 12 | Codex CLI | `codex-cli/` | 8 | Phase 1R | 1→**1R** | 執筆可能 |
-| 13 | キャリアピボット | `career-pivot/` | 10 | Phase 1R（保留） | 1→**1R** | 主人公が中村さん。著者の熱量確認待ち |
+| 8 | 睡眠改善 | `sleep-improvement/` | 8 | Phase 1A待ち | 1→1R→**1A待ち** | 著者レビュー後に執筆可能 |
+| 9 | デジタルデトックス | `digital-detox/` | 8 | Phase 1A待ち | 1→1R→**1A待ち** | 著者レビュー後に執筆可能 |
+| 10 | SQL | `sql/` | 9 | Phase 1A待ち | 1→1R→**1A待ち** | 著者レビュー後に執筆可能 |
+| 11 | レガシーコード改善 | `legacy-code/` | 8 | Phase 1A待ち | 1→1R→**1A待ち** | TDD本の続編的位置づけ |
+| 12 | Codex CLI | `codex-cli/` | 8 | Phase 1A待ち | 1→1R→**1A待ち** | |
+| 13 | キャリアピボット | `career-pivot/` | 10 | Phase 1A待ち（保留） | 1→1R→**1A待ち** | 主人公が中村さん。著者の熱量確認待ち |
 | — | AI仕事術 | `ai-work-style/` | — | NO-GO | — | Claude Code本と重複。出版予定なし |
 
 ### フレームワーク導入前の初稿（thinking-hubなし）
@@ -70,8 +71,8 @@ Last Updated: 2026-03-25
 | # | テーマ | thinking-hub | 章数 | Phase | 通過済み | 出版先 | 備考 |
 |---|--------|-------------|------|-------|---------|-------|------|
 | 1 | 断酒 | `sobriety/` | 8 | Phase 3待ち | 1→1R→2→**3待ち** | `../kindle2/06_sobriety-book/epub/` | 初稿執筆済み（10ファイル/3,291行）。Claudeレビュー未実施 |
-| 2 | 食事改善 | `food-improvement/` | 8 | Phase 1R | 1→**1R** | — | thinking-hubレビュー済み。執筆可能 |
-| 3 | ストレスマネジメント | `stress-management/` | 8 | Phase 1R | 1→**1R** | — | thinking-hubレビュー済み。執筆可能 |
+| 2 | 食事改善 | `food-improvement/` | 8 | Phase 1A待ち | 1→1R→**1A待ち** | — | 著者レビュー後に執筆可能 |
+| 3 | ストレスマネジメント | `stress-management/` | 8 | Phase 1A待ち | 1→1R→**1A待ち** | — | 著者レビュー後に執筆可能 |
 
 ---
 
@@ -116,9 +117,9 @@ Last Updated: 2026-03-25
 
 ### Phase別
 - Published: 6冊
-- Phase 5（著者レビュー中）: 1冊（Obsidian）
-- Phase 3待ち（レビュー未実施）: 1冊（断酒）
-- Phase 1R（執筆可能）: 7冊
+- Phase 5（原稿 著者レビュー中）: 1冊（Obsidian）
+- Phase 3待ち（原稿 Claudeレビュー待ち）: 1冊（断酒）
+- Phase 1A待ち（thinking-hub 著者レビュー待ち）: 7冊
 - Phase 0（企画段階）: 2冊
 - NO-GO: 1冊
 - Phase未定（旧作）: 4冊（X4〜X7）
