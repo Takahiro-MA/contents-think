@@ -70,7 +70,7 @@ Last Updated: 2026-03-25
 
 | # | テーマ | thinking-hub | 章数 | Phase | 通過済み | 出版先 | 備考 |
 |---|--------|-------------|------|-------|---------|-------|------|
-| 1 | 断酒 | `sobriety/` | 8 | Phase 3待ち | 1→1R→2→**3待ち** | `../kindle2/06_sobriety-book/epub/` | 初稿執筆済み（10ファイル/3,291行）。Claudeレビュー未実施 |
+| 1 | 断酒 | `sobriety/` | 8 | Phase 5待ち | 1→1R→2→3→4→**5待ち** | `../kindle2/06_sobriety-book/epub/` | Claudeレビュー43件中12件修正済み。著者レビュー待ち |
 | 2 | 食事改善 | `food-improvement/` | 8 | Phase 1A待ち | 1→1R→**1A待ち** | — | 著者レビュー後に執筆可能 |
 | 3 | ストレスマネジメント | `stress-management/` | 8 | Phase 1A待ち | 1→1R→**1A待ち** | — | 著者レビュー後に執筆可能 |
 
