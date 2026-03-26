@@ -51,7 +51,7 @@ Last Updated: 2026-03-25
 | 9 | デジタルデトックス | `digital-detox/` | 8 | Phase 1A待ち | 1→1R→**1A待ち** | 著者レビュー後に執筆可能 |
 | 10 | SQL | `sql/` | 9 | Phase 1A待ち | 1→1R→**1A待ち** | 著者レビュー後に執筆可能 |
 | 11 | レガシーコード改善 | `legacy-code/` | 8 | Phase 1A待ち | 1→1R→**1A待ち** | TDD本の続編的位置づけ |
-| 12 | Codex CLI | `codex-cli/` | 8 | Phase 1A待ち | 1→1R→**1A待ち** | |
+| 12 | Codex CLI | `codex-cli/` | 8 | Phase 1A完了 | 1→1R→**1A** | 著者レビュー完了。執筆可能 |
 | 13 | キャリアピボット | `career-pivot/` | 10 | Phase 1A待ち（保留） | 1→1R→**1A待ち** | 主人公が中村さん。著者の熱量確認待ち |
 | — | AI仕事術 | `ai-work-style/` | — | NO-GO | — | Claude Code本と重複。出版予定なし |
 
