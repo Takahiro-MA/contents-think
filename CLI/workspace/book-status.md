@@ -3,7 +3,7 @@
 > 全書籍のthinking-hub（執筆仕様書）と執筆状態を一覧管理するファイル。
 > 状態が変わったら都度更新すること。
 
-Last Updated: 2026-03-25
+Last Updated: 2026-03-27
 
 ---
 
@@ -41,7 +41,7 @@ Last Updated: 2026-03-25
 
 | # | テーマ | thinking-hub | 章数 | Phase | 通過済み | 出版先 | 備考 |
 |---|--------|-------------|------|-------|---------|-------|------|
-| 7 | Obsidian/PKM | `obsidian/` | 8 | Phase 5 | 1→1R→2→3→4→**5** | `../kindle2/08_obsidian-book/epub/` | 著者レビュー24件 修正待ち。review-log.md + review-analysis.mdあり |
+| 7 | Obsidian/PKM | `obsidian/` | 8 | Phase 6待ち | 1→1R→2→3→4→5→**6待ち** | `../kindle2/08_obsidian-book/epub/` | 著者レビュー24件+整合性チェック指摘を全件修正済み。付録追加。最終バランスチェック待ち |
 
 ### thinking-hub作成済み（初稿未着手）
 
@@ -117,7 +117,7 @@ Last Updated: 2026-03-25
 
 ### Phase別
 - Published: 6冊
-- Phase 5（原稿 著者レビュー中）: 1冊（Obsidian）
+- Phase 6待ち（最終バランスチェック待ち）: 1冊（Obsidian）
 - Phase 3待ち（原稿 Claudeレビュー待ち）: 1冊（断酒）
 - Phase 1A待ち（thinking-hub 著者レビュー待ち）: 7冊
 - Phase 0（企画段階）: 2冊
