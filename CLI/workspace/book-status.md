@@ -3,7 +3,7 @@
 > 全書籍のthinking-hub（執筆仕様書）と執筆状態を一覧管理するファイル。
 > 状態が変わったら都度更新すること。
 
-Last Updated: 2026-03-27
+Last Updated: 2026-04-06
 
 ---
 
@@ -36,6 +36,7 @@ Last Updated: 2026-03-27
 | 4 | TDD | — | `../kindle2/04_tdd-book/epub/` | Published。レガシーコード本の前日譚。review-log.mdあり |
 | 5 | Claude Code | `claude-code/` | `../kindle2/05_claudecode/epub/` | Published |
 | 6 | Linux/CLI | `linux-cli/` | `../kindle2/07_linux-cli-book/epub/` | Published。review-log.mdあり |
+| 7 | Codex CLI | `codex-cli/` | `../kindle2/09_codex-cli-book/epub/` | Published。review-log.mdあり。付録あり |
 
 ### 執筆進行中
 
@@ -51,7 +52,7 @@ Last Updated: 2026-03-27
 | 9 | デジタルデトックス | `digital-detox/` | 8 | Phase 1A待ち | 1→1R→**1A待ち** | 著者レビュー後に執筆可能 |
 | 10 | SQL | `sql/` | 9 | Phase 1A待ち | 1→1R→**1A待ち** | 著者レビュー後に執筆可能 |
 | 11 | レガシーコード改善 | `legacy-code/` | 8 | Phase 1A待ち | 1→1R→**1A待ち** | TDD本の続編的位置づけ |
-| 12 | Codex CLI | `codex-cli/` | 8 | Phase 6待ち | 1→1R→1A→2→3→4→5→**6待ち** | 著者レビュー31件全件修正済み。付録追加。最終バランスチェック待ち。`../kindle2/09_codex-cli-book/epub/` |
+| ~~12~~ | ~~Codex CLI~~ | — | — | Published | — | 出版済みセクションに移動 |
 | 13 | キャリアピボット | `career-pivot/` | 10 | Phase 1A待ち（保留） | 1→1R→**1A待ち** | 主人公が中村さん。著者の熱量確認待ち |
 | — | AI仕事術 | `ai-work-style/` | — | NO-GO | — | Claude Code本と重複。出版予定なし |
 
@@ -110,16 +111,16 @@ Last Updated: 2026-03-27
 ## 統計
 
 ### シリーズ別
-- 田中さんシリーズ: 出版済み5冊 + 執筆中2冊 + hub済み6冊（うちNO-GO 1, 保留1） + 旧作4冊
+- 田中さんシリーズ: 出版済み6冊 + 執筆中1冊 + hub済み5冊（うちNO-GO 1, 保留1） + 旧作4冊
 - 藤井さんシリーズ: 初稿済み1冊 + hub済み2冊
 - ゲーム理論シリーズ: 企画段階2冊
 - その他: 4件（Ruby, 釣りマンガ, LLM理論書, サンプル）
 
 ### Phase別
-- Published: 6冊
+- Published: 7冊
 - Phase 6待ち（最終バランスチェック待ち）: 1冊（Obsidian）
 - Phase 3待ち（原稿 Claudeレビュー待ち）: 1冊（断酒）
-- Phase 1A待ち（thinking-hub 著者レビュー待ち）: 7冊
+- Phase 1A待ち（thinking-hub 著者レビュー待ち）: 6冊
 - Phase 0（企画段階）: 2冊
 - NO-GO: 1冊
 - Phase未定（旧作）: 4冊（X4〜X7）
