@@ -3,7 +3,7 @@
 > 全書籍のthinking-hub（執筆仕様書）と執筆状態を一覧管理するファイル。
 > 状態が変わったら都度更新すること。
 
-Last Updated: 2026-04-06
+Last Updated: 2026-05-31
 
 ---
 
@@ -54,6 +54,7 @@ Last Updated: 2026-04-06
 | 11 | レガシーコード改善 | `legacy-code/` | 8 | Phase 1A待ち | 1→1R→**1A待ち** | TDD本の続編的位置づけ |
 | ~~12~~ | ~~Codex CLI~~ | — | — | Published | — | 出版済みセクションに移動 |
 | 13 | キャリアピボット | `career-pivot/` | 10 | Phase 1A待ち（保留） | 1→1R→**1A待ち** | 主人公が中村さん。著者の熱量確認待ち |
+| 14 | Kiro CLI | `kiro-cli/` | 8 | Phase 1R完了・**Phase 1A待ち** | 1→**1R完了** | 神谷PdMとの自治体プロダクト立て直し物語。Phase 1R（Claudeレビュー）でA群16件・B群19件を反映済み。著者レビュー（Phase 1A）待ち |
 | — | AI仕事術 | `ai-work-style/` | — | NO-GO | — | Claude Code本と重複。出版予定なし |
 
 ### フレームワーク導入前の初稿（thinking-hubなし）
@@ -111,23 +112,25 @@ Last Updated: 2026-04-06
 ## 統計
 
 ### シリーズ別
-- 田中さんシリーズ: 出版済み6冊 + 執筆中1冊 + hub済み5冊（うちNO-GO 1, 保留1） + 旧作4冊
+- 田中さんシリーズ: 出版済み6冊 + 執筆中1冊 + hub済み6冊（うちNO-GO 1, 保留1） + 旧作4冊
 - 藤井さんシリーズ: 初稿済み1冊 + hub済み2冊
 - ゲーム理論シリーズ: 企画段階2冊
 - その他: 4件（Ruby, 釣りマンガ, LLM理論書, サンプル）
+- アイデア段階（フォルダのみ・status未登録）: 4件（ai-driven-org, gluten-free, libre-diet, low-fat-diet）
 
 ### Phase別
 - Published: 7冊
 - Phase 6待ち（最終バランスチェック待ち）: 1冊（Obsidian）
 - Phase 3待ち（原稿 Claudeレビュー待ち）: 1冊（断酒）
+- Phase 1A待ち（thinking-hub 著者レビュー待ち、Phase 1R完了組）: 1冊（Kiro CLI）
 - Phase 1A待ち（thinking-hub 著者レビュー待ち）: 6冊
 - Phase 0（企画段階）: 2冊
 - NO-GO: 1冊
 - Phase未定（旧作）: 4冊（X4〜X7）
 
 ### thinking-hub
-- thinking-hub総数: 13（うちNO-GO 1）
-- thinking-hub合計行数: 約13,100行
+- thinking-hub総数: 14（うちNO-GO 1）
+- thinking-hub合計行数: 約14,100行
 - 1冊あたり平均: 約1,000行 / 16セクション
 
 ---
