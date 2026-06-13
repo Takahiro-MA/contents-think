@@ -43,7 +43,7 @@ Last Updated: 2026-06-13
 | # | テーマ | thinking-hub | 章数 | Phase | 通過済み | 出版先 | 備考 |
 |---|--------|-------------|------|-------|---------|-------|------|
 | 7 | Obsidian/PKM | `obsidian/` | 8 | Phase 6待ち | 1→1R→2→3→4→5→**6待ち** | `../kindle2/08_obsidian-book/epub/` | 著者レビュー24件+整合性チェック指摘を全件修正済み。付録追加。最終バランスチェック待ち |
-| 14 | Kiro CLI | `kiro-cli/` | 8 | Phase 3待ち | 1→1R→1A→2→**3待ち** | `../kindle2/10_kiro-cli-book/epub/` | 神谷PdMとの自治体プロダクト立て直し物語。Phase 1A（著者の五月雨レビュー：田中像＝優秀なIC・自走力の委ねる/握るメリハリ・入門網羅性補強）反映済み。Phase 2で全12ファイル約13万字執筆完了。3視点レビュー（Phase 3）待ち |
+| 14 | Kiro CLI | `kiro-cli/` | 8 | Phase 5待ち | 1→1R→1A→2→3→4→**5待ち**（整合性チェック済み） | `../kindle2/10_kiro-cli-book/epub/` | 神谷PdMとの自治体プロダクト立て直し物語。Phase 3（3視点レビュー）→Phase 4（A級8件・B級8件反映：Hooks JSON公式準拠化・料金表・認証手順追加・MCP/Steeringパス修正等）→整合性チェック（5項目問題なし）完了。全12ファイル約13.6万字。著者通読（Phase 5）待ち |
 
 ### thinking-hub作成済み（初稿未着手）
 
@@ -122,7 +122,8 @@ Last Updated: 2026-06-13
 ### Phase別
 - Published: 7冊
 - Phase 6待ち（最終バランスチェック待ち）: 1冊（Obsidian）
-- Phase 3待ち（原稿 Claudeレビュー待ち）: 2冊（断酒・Kiro CLI）
+- Phase 5待ち（著者通読待ち、整合性チェック済み）: 1冊（Kiro CLI）
+- Phase 3待ち（原稿 Claudeレビュー待ち）: 1冊（断酒）
 - Phase 1A待ち（thinking-hub 著者レビュー待ち）: 6冊
 - Phase 0（企画段階）: 2冊
 - NO-GO: 1冊
