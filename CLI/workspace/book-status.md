@@ -3,7 +3,7 @@
 > 全書籍のthinking-hub（執筆仕様書）と執筆状態を一覧管理するファイル。
 > 状態が変わったら都度更新すること。
 
-Last Updated: 2026-05-31
+Last Updated: 2026-06-13
 
 ---
 
@@ -43,6 +43,7 @@ Last Updated: 2026-05-31
 | # | テーマ | thinking-hub | 章数 | Phase | 通過済み | 出版先 | 備考 |
 |---|--------|-------------|------|-------|---------|-------|------|
 | 7 | Obsidian/PKM | `obsidian/` | 8 | Phase 6待ち | 1→1R→2→3→4→5→**6待ち** | `../kindle2/08_obsidian-book/epub/` | 著者レビュー24件+整合性チェック指摘を全件修正済み。付録追加。最終バランスチェック待ち |
+| 14 | Kiro CLI | `kiro-cli/` | 8 | Phase 3待ち | 1→1R→1A→2→**3待ち** | `../kindle2/10_kiro-cli-book/epub/` | 神谷PdMとの自治体プロダクト立て直し物語。Phase 1A（著者の五月雨レビュー：田中像＝優秀なIC・自走力の委ねる/握るメリハリ・入門網羅性補強）反映済み。Phase 2で全12ファイル約13万字執筆完了。3視点レビュー（Phase 3）待ち |
 
 ### thinking-hub作成済み（初稿未着手）
 
@@ -54,7 +55,7 @@ Last Updated: 2026-05-31
 | 11 | レガシーコード改善 | `legacy-code/` | 8 | Phase 1A待ち | 1→1R→**1A待ち** | TDD本の続編的位置づけ |
 | ~~12~~ | ~~Codex CLI~~ | — | — | Published | — | 出版済みセクションに移動 |
 | 13 | キャリアピボット | `career-pivot/` | 10 | Phase 1A待ち（保留） | 1→1R→**1A待ち** | 主人公が中村さん。著者の熱量確認待ち |
-| 14 | Kiro CLI | `kiro-cli/` | 8 | Phase 1R完了・**Phase 1A待ち** | 1→**1R完了** | 神谷PdMとの自治体プロダクト立て直し物語。Phase 1R（Claudeレビュー）でA群16件・B群19件を反映済み。著者レビュー（Phase 1A）待ち |
+| ~~14~~ | ~~Kiro CLI~~ | — | — | 執筆進行中へ | — | 執筆進行中セクションに移動（Phase 2完了） |
 | — | AI仕事術 | `ai-work-style/` | — | NO-GO | — | Claude Code本と重複。出版予定なし |
 
 ### フレームワーク導入前の初稿（thinking-hubなし）
@@ -112,7 +113,7 @@ Last Updated: 2026-05-31
 ## 統計
 
 ### シリーズ別
-- 田中さんシリーズ: 出版済み6冊 + 執筆中1冊 + hub済み6冊（うちNO-GO 1, 保留1） + 旧作4冊
+- 田中さんシリーズ: 出版済み6冊 + 執筆中2冊 + hub済み5冊（うちNO-GO 1, 保留1） + 旧作4冊
 - 藤井さんシリーズ: 初稿済み1冊 + hub済み2冊
 - ゲーム理論シリーズ: 企画段階2冊
 - その他: 4件（Ruby, 釣りマンガ, LLM理論書, サンプル）
@@ -121,8 +122,7 @@ Last Updated: 2026-05-31
 ### Phase別
 - Published: 7冊
 - Phase 6待ち（最終バランスチェック待ち）: 1冊（Obsidian）
-- Phase 3待ち（原稿 Claudeレビュー待ち）: 1冊（断酒）
-- Phase 1A待ち（thinking-hub 著者レビュー待ち、Phase 1R完了組）: 1冊（Kiro CLI）
+- Phase 3待ち（原稿 Claudeレビュー待ち）: 2冊（断酒・Kiro CLI）
 - Phase 1A待ち（thinking-hub 著者レビュー待ち）: 6冊
 - Phase 0（企画段階）: 2冊
 - NO-GO: 1冊
