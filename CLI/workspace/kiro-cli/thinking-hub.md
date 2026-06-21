@@ -272,7 +272,7 @@ PoC完成の高揚感（第1章）→ 仕様を言語化する（第2章）→ �
 1. ChatGPT（汎用LLM）とAIコーディングエージェントの根本的な違い——「テキストの貼り付け対話」と「ファイルシステムを認識し、文脈を保持し、自律的に動くエージェント」。ChatGPTの「プロジェクト機能」や「Canvas」とも何が違うのかまで踏み込む
 2. Kiro CLI とは何か——AWS純正、Spec-Driven workflow、複数モデル選択（Sonnet 4.5/4.6、Haiku 4.5、Opus 4.7、Auto）、API認証
 3. **なぜ Codex CLI ではなく Kiro CLI を選ぶか**——ChatGPT課金ユーザーの自然な次の一歩は Codex CLI（OpenAI繋がり）に見えるが、自治体プロダクトの文脈では「本番システムを実績あるクラウド基盤（AWS）に載せる→開発ツールもAWS純正で地続きにすると、情シス審査もデータ経路の説明もシンプルになる」という現実が選定軸を変える。技術的優劣ではなく、企業導入要件（本番プラットフォームの実績・データ経路の説明可能性）で決まる
-4. Kiro IDE と Kiro CLI の違い、なぜ本書ではCLIを選ぶか——共有部分（Specs/Steering/MCP/モデル）と CLI 固有部分（Headless モード、コマンド操作の明示性、Unix哲学との親和性）。**IDE派の不安を先回りで解消する3つの理由**
+4. Kiro IDE と Kiro CLI の違い、なぜ本書ではCLIを選ぶか——共有部分（Specs/Steering/MCP/モデル）と CLI 固有部分（Headless モード、コマンド操作の明示性、Unix哲学との親和性）。**IDE派の不安を先回りで解消する3つの理由**。**【第1章📘ボックスで明示】IDE/CLIメリデメ比較表＋Specsの切り分けを、第1章1.5（基本操作ボックスの直前）の📘技術解説ボックスで読者に早期提示する。切り分けの要点: 「Specs（requirements.md/design.md/tasks.md）という"仕組み・ファイル"はIDEとCLIで共通（ただの `.kiro/specs/` 配下のMarkdown）。違うのは作り方で、IDEは専用UI（Specペインの＋ボタン・タスクのクリック実行）でガイド付き、CLIには専用パネルはなくチャットで `.kiro/specs/` のファイルを書かせて育てる」。これにより本書の「CLIでSpecsを作る」＝チャットにrequirements.md→design.md→tasks.mdを書かせる営み、と読者が誤解せず接続できる。詳細な正史は本ファイル line 391-395 を参照** 
 5. Kiro CLI のインストール（`curl -fsSL https://cli.kiro.dev/install | bash`）と初期セットアップ（基本コマンド・認証）。バイナリ名は `kiro-cli`（`kiro` はオプションの簡易ルーター）
 6. **Kiro CLI の基本操作（入門の土台）**——スラッシュコマンド（`/help` `/context` `/model` `/agent` `/guide`）、`@`によるファイル参照、ツール承認の仕組み（読み取り系は自動・書き込み/コマンド実行系は承認が必要）、3つのbuilt-in agent（Default / Plan / Guide）と Plan agent（`Shift+Tab`で「実行前に計画を立てて確認する」モード）。「起動したあと、実際どう操作するか」を最初に押さえる
 7. **本書全体の見通し（製品化ロードマップ）**——「PoCを製品に昇格させる」のに必要なステップ（要件→設計→実装→運用→品質→CI/CD）と、それぞれに対応するKiroツール（Specs / Subagents / Hooks / Steering / Headless）の全体像。読者がこの先8章で何を攻略するのかを最初に俯瞰する
