@@ -1,6 +1,6 @@
 # Book Ideas Hub
 
-Last Updated: 2026-02-08
+Last Updated: 2026-06-23
 
 ---
 
@@ -55,6 +55,7 @@ Last Updated: 2026-02-08
 | E7 | Platform Engineering入門物語 | 社内開発者プラットフォーム構築の物語 | 評価済 |
 | E8 | React/Next.js実践物語 | フロントエンド開発を学ぶ物語 | 評価済 |
 | E9 | GitHub Copilot活用物語 | AI支援コーディングで効率化する物語 | 評価済 |
+| E10 | 生成AIで始めるモバイルアプリ開発入門 | 生成AI（Claude Code/Cursor等）を活用して、未経験者がモバイルアプリ（iOS/Android、React Native/Flutter/Expo等）を作れるようになる入門書。物語形式にするかは未定 | 新規・未評価（2026-06-23 着想） |
 
 ---
 
