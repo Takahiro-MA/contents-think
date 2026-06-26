@@ -399,7 +399,7 @@ Kiroが推奨する記法として **EARS（Easy Approach to Requirements Syntax
 
 **☕ コラム: Specs と CLAUDE.md／AGENTS.md の違い**
 
-CLAUDE.md（Claude Code）、AGENTS.md（Codex CLI、Cursor、Geminiなど）、Specs（Kiro CLI）はいずれも「AIエージェントへの統制ファイル」だが、目的が異なる。CLAUDE.md / AGENTS.md は「**コード生成の方針**」（命名規則、アーキテクチャ、禁止パターン）を主に扱う。Specs は「**プロダクトそのものの仕様**」（要件、設計、実装計画）を扱う。両者は補完関係にあり、Kiro CLI では Steering ファイル（後述）でコード方針を、Specs で仕様を、分けて管理する。
+CLAUDE.md（Claude Code）、AGENTS.md（Codex CLI、Cursor、Geminiなど）、Steering（Kiro CLI）はいずれも「AIエージェントへの**方針**ファイル」。**【事実訂正・重要】CLAUDE.md / AGENTS.md を「コード生成方針に限定」と書かない**——実際はコード規約に加え、トーン・出力品質・禁止事項・セキュリティ制約まで書ける広義の方針ファイル（公式・実態で確認済み）。「Steeringだけが広義」という対比は誤り。本コラムの軸は方針ファイル vs Specs。Specs（Kiro）は「**プロダクトそのものの仕様**」（要件、設計、実装計画）を扱う。Kiro CLI の特徴は「何を書けるか」の差ではなく、**仕様（Specs）と方針（Steering）を別ファイルに構造分離している**点。
 
 **実践ワーク:**
 - [ ] 自分が直近で作ったプロダクト（PoCや個人開発）の `requirements.md` を書いてみる
@@ -691,7 +691,7 @@ Hook には JSON が STDIN で渡され（`hook_event_name`/`cwd`/`session_id`/`
 
 **☕ コラム: Steering / CLAUDE.md / AGENTS.md — 3つの「プロジェクト統制」を比べる**
 
-Claude Code の CLAUDE.md、Codex CLI（や他多くのツール）の AGENTS.md、Kiro CLI の Steering ファイル——いずれも「AIエージェントの振る舞いをプロジェクト全体で統制する」ファイル。違いは「何を書くか」と「いつ読まれるか」。CLAUDE.md / AGENTS.md は主にコード生成方針。Steering は要件・設計・出力品質を含む広義のプロジェクト方針。Kiro CLI では Specs（要件・設計・実装計画）と Steering（プロジェクト方針）を分離して扱う設計。読者が複数ツールを使う際の使い分け指針として提供。
+Claude Code の CLAUDE.md、Codex CLI（や他多くのツール）の AGENTS.md、Kiro CLI の Steering ファイル——いずれも「AIエージェントの振る舞いをプロジェクト全体で統制する」方針ファイル。**【事実訂正・重要】3者とも書ける内容に大きな差はない**——CLAUDE.md / AGENTS.md も、コード規約だけでなくトーン・出力品質・禁止事項・セキュリティ制約まで書ける（「Steeringだけが広義」は誤り。公式・実態で確認済み）。**Kiro の差別化は「何を書けるか」ではなく、仕様（Specs）と方針（Steering）を構造として明確に分離している点**（CLAUDE.md/AGENTS.md は単一ファイルに混在しがち）。加えて Steering は role 別に複数ファイル分割＋自動ロード可。読者が複数ツールを使う際の使い分け指針として提供。
 
 **実践ワーク:**
 - [ ] 自分のチームの「暗黙の当たり前」を3つ言語化する
