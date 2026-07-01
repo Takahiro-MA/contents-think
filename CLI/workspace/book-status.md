@@ -3,7 +3,7 @@
 > 全書籍のthinking-hub（執筆仕様書）と執筆状態を一覧管理するファイル。
 > 状態が変わったら都度更新すること。
 
-Last Updated: 2026-06-13
+Last Updated: 2026-07-01
 
 ---
 
@@ -37,13 +37,13 @@ Last Updated: 2026-06-13
 | 5 | Claude Code | `claude-code/` | `../kindle2/05_claudecode/epub/` | Published |
 | 6 | Linux/CLI | `linux-cli/` | `../kindle2/07_linux-cli-book/epub/` | Published。review-log.mdあり |
 | 7 | Codex CLI | `codex-cli/` | `../kindle2/09_codex-cli-book/epub/` | Published。review-log.mdあり。付録あり |
+| 8 | Kiro CLI | `kiro-cli/` | `../kindle2/10_kiro-cli-book/epub/` | **Published（2026-07-01）**。神谷PdMとの自治体プロダクト立て直し物語。Phase 5（著者五月雨レビュー：キャラ像調整・Codex技術監査・MCP/Steering/認証の公式照合・章接続修正等を多数反映）完了 |
 
 ### 執筆進行中
 
 | # | テーマ | thinking-hub | 章数 | Phase | 通過済み | 出版先 | 備考 |
 |---|--------|-------------|------|-------|---------|-------|------|
 | 7 | Obsidian/PKM | `obsidian/` | 8 | Phase 6待ち | 1→1R→2→3→4→5→**6待ち** | `../kindle2/08_obsidian-book/epub/` | 著者レビュー24件+整合性チェック指摘を全件修正済み。付録追加。最終バランスチェック待ち |
-| 14 | Kiro CLI | `kiro-cli/` | 8 | Phase 5待ち | 1→1R→1A→2→3→4→**5待ち**（整合性チェック済み） | `../kindle2/10_kiro-cli-book/epub/` | 神谷PdMとの自治体プロダクト立て直し物語。Phase 3（3視点レビュー）→Phase 4（A級8件・B級8件反映：Hooks JSON公式準拠化・料金表・認証手順追加・MCP/Steeringパス修正等）→整合性チェック（5項目問題なし）完了。全12ファイル約13.6万字。著者通読（Phase 5）待ち |
 
 ### thinking-hub作成済み（初稿未着手）
 
@@ -55,7 +55,8 @@ Last Updated: 2026-06-13
 | 11 | レガシーコード改善 | `legacy-code/` | 8 | Phase 1A待ち | 1→1R→**1A待ち** | TDD本の続編的位置づけ |
 | ~~12~~ | ~~Codex CLI~~ | — | — | Published | — | 出版済みセクションに移動 |
 | 13 | キャリアピボット | `career-pivot/` | 10 | Phase 1A待ち（保留） | 1→1R→**1A待ち** | 主人公が中村さん。著者の熱量確認待ち |
-| ~~14~~ | ~~Kiro CLI~~ | — | — | 執筆進行中へ | — | 執筆進行中セクションに移動（Phase 2完了） |
+| ~~14~~ | ~~Kiro CLI~~ | — | — | Published | — | 出版済みセクションに移動（2026-07-01） |
+| 15 | 生成AIモバイルアプリ入門（C・入門） | `ai-mobile-app/` | 9 | Phase 1 | **1完了** | 田中さんシリーズ番外編（スピンオフ）。主人公=森田結衣（田中の姉・完全初心者）、田中はメンター。React Web試作→Expo移植→ローカル通知→App Store公開。2冊構想のC先行（BはE10初級・続編候補）。thinking-hub初稿済み、Phase 1R/1A未 |
 | — | AI仕事術 | `ai-work-style/` | — | NO-GO | — | Claude Code本と重複。出版予定なし |
 
 ### フレームワーク導入前の初稿（thinking-hubなし）
@@ -113,25 +114,24 @@ Last Updated: 2026-06-13
 ## 統計
 
 ### シリーズ別
-- 田中さんシリーズ: 出版済み6冊 + 執筆中2冊 + hub済み5冊（うちNO-GO 1, 保留1） + 旧作4冊
+- 田中さんシリーズ: 出版済み7冊 + 執筆中1冊 + hub済み6冊（うちNO-GO 1, 保留1, 番外編1） + 旧作4冊
 - 藤井さんシリーズ: 初稿済み1冊 + hub済み2冊
 - ゲーム理論シリーズ: 企画段階2冊
 - その他: 4件（Ruby, 釣りマンガ, LLM理論書, サンプル）
 - アイデア段階（フォルダのみ・status未登録）: 4件（ai-driven-org, gluten-free, libre-diet, low-fat-diet）
 
 ### Phase別
-- Published: 7冊
+- Published: 8冊（最新: Kiro CLI 2026-07-01）
 - Phase 6待ち（最終バランスチェック待ち）: 1冊（Obsidian）
-- Phase 5待ち（著者通読待ち、整合性チェック済み）: 1冊（Kiro CLI）
 - Phase 3待ち（原稿 Claudeレビュー待ち）: 1冊（断酒）
+- Phase 1（thinking-hub初稿済み、1R/1A未）: 1冊（モバイルアプリ入門C）
 - Phase 1A待ち（thinking-hub 著者レビュー待ち）: 6冊
 - Phase 0（企画段階）: 2冊
 - NO-GO: 1冊
 - Phase未定（旧作）: 4冊（X4〜X7）
 
 ### thinking-hub
-- thinking-hub総数: 14（うちNO-GO 1）
-- thinking-hub合計行数: 約14,100行
+- thinking-hub総数: 15（うちNO-GO 1）
 - 1冊あたり平均: 約1,000行 / 16セクション
 
 ---
