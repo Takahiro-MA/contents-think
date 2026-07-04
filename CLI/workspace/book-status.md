@@ -3,7 +3,7 @@
 > 全書籍のthinking-hub（執筆仕様書）と執筆状態を一覧管理するファイル。
 > 状態が変わったら都度更新すること。
 
-Last Updated: 2026-07-01
+Last Updated: 2026-07-04
 
 ---
 
@@ -57,6 +57,7 @@ Last Updated: 2026-07-01
 | 13 | キャリアピボット | `career-pivot/` | 10 | Phase 1A待ち（保留） | 1→1R→**1A待ち** | 主人公が中村さん。著者の熱量確認待ち |
 | ~~14~~ | ~~Kiro CLI~~ | — | — | Published | — | 出版済みセクションに移動（2026-07-01） |
 | 15 | 生成AIモバイルアプリ入門（C・入門） | `ai-mobile-app/` | 9 | Phase 1 | **1完了** | 田中さんシリーズ番外編（スピンオフ）。主人公=森田結衣（田中の姉・完全初心者）、田中はメンター。React Web試作→Expo移植→ローカル通知→App Store公開。2冊構想のC先行（BはE10初級・続編候補）。thinking-hub初稿済み、Phase 1R/1A未 |
+| 16 | CI/CD（ストーリーで覚えるCI/CD入門） | `cicd/` | 9 | Phase 1R反映済 | 1→**1R反映済** | ideas-hub E5（14点）。主軸「AIがYAMLを書く時代、価値は環境選定と設計判断へ」。異動2部構成（第1部5章:クラウドGitHub×Actions / 第2部4章:製造業の閉域×GHES×self-hosted runner）。メンター山田＋工場情シス相沢涼子。3視点レビューの**A全項目＋B-3〜B-7＋C-1〜C-4を反映済**。残＝B-8（§12以降の未整備セクション新設）→Phase 1A。shared-characters §10B追加設定済 |
 | — | AI仕事術 | `ai-work-style/` | — | NO-GO | — | Claude Code本と重複。出版予定なし |
 
 ### フレームワーク導入前の初稿（thinking-hubなし）
@@ -114,7 +115,7 @@ Last Updated: 2026-07-01
 ## 統計
 
 ### シリーズ別
-- 田中さんシリーズ: 出版済み7冊 + 執筆中1冊 + hub済み6冊（うちNO-GO 1, 保留1, 番外編1） + 旧作4冊
+- 田中さんシリーズ: 出版済み8冊 + 執筆中1冊 + hub済み7冊（うちNO-GO 1, 保留1, 番外編1, CI/CD 1） + 旧作4冊
 - 藤井さんシリーズ: 初稿済み1冊 + hub済み2冊
 - ゲーム理論シリーズ: 企画段階2冊
 - その他: 4件（Ruby, 釣りマンガ, LLM理論書, サンプル）
@@ -124,6 +125,7 @@ Last Updated: 2026-07-01
 - Published: 8冊（最新: Kiro CLI 2026-07-01）
 - Phase 6待ち（最終バランスチェック待ち）: 1冊（Obsidian）
 - Phase 3待ち（原稿 Claudeレビュー待ち）: 1冊（断酒）
+- Phase 1R反映済（thinking-hub Claudeレビュー反映済、1A未）: 1冊（CI/CD）
 - Phase 1（thinking-hub初稿済み、1R/1A未）: 1冊（モバイルアプリ入門C）
 - Phase 1A待ち（thinking-hub 著者レビュー待ち）: 6冊
 - Phase 0（企画段階）: 2冊
@@ -131,7 +133,7 @@ Last Updated: 2026-07-01
 - Phase未定（旧作）: 4冊（X4〜X7）
 
 ### thinking-hub
-- thinking-hub総数: 15（うちNO-GO 1）
+- thinking-hub総数: 16（うちNO-GO 1）
 - 1冊あたり平均: 約1,000行 / 16セクション
 
 ---
