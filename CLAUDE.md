@@ -1,11 +1,37 @@
-# 田中さんシリーズ 執筆プロジェクト
+# Kindle執筆システム（田中さん/藤井さんシリーズほか）
+
+## 全体地図（kindle出版の3リポジトリ）
+
+- `contents-think`（ここ）= 執筆システムの中核。仕様書(thinking-hub)・commands・テンプレート
+- `../kindle2` = 原稿の出力先と出版運用。**書籍台帳の正典は本リポジトリの
+  `CLI/workspace/book-status.md`**（kindle2/docs 側の台帳は歴史的スナップショット）
+- `~/worldwide` = 出版済みEPUBの多言語展開。プロセスの正典は `worldwide/WORKFLOW.md`
+
+## 執筆方式の2系統
+
+- **A系統（物語形式）**: 田中さん/藤井さんシリーズ。本CLAUDE.mdと
+  `../kindle2/docs/21_BOOK-STRUCTURE-TEMPLATE.md` に準拠
+- **B系統（AI共著・project_rules駆動）**: 各書籍ディレクトリの `project_rules.md` が憲章
+  （該当: `../kindle2/04_tdd-book/`、`../kindle2/X3_LLM_in_office/`）。
+  B系統の「一般的なビジネス書テンプレ使用禁止」はB系統内のルールであり、
+  A系統のテンプレ準拠と矛盾しない（適用対象が違う）
+- 各書籍がどちらの系統かは `CLI/workspace/book-status.md` の「執筆方式の系統」節を見る
 
 ## プロジェクト概要
 「田中さんシリーズ」はIT技術を物語形式で学ぶKindle書籍シリーズ。
-- 仕様書: `CLI/workspace/<プロジェクト名>/thinking-hub.md`
+- 仕様書: `CLI/workspace/<プロジェクト名>/thinking-hub.md`（**全16セクション構成が正**。
+  雛形は `CLI/templates/book-contents-think/thinking-hub.md`）
 - キャラクター設定: `CLI/workspace/shared-characters.md`
 - 出力先: `../kindle2/<書籍ディレクトリ>/epub/`
 - 既刊スタイル参照: `../kindle2/01_git-github-book/epub/`, `../kindle2/04_tdd-book/epub/`
+
+## コマンドの責務
+
+- 汎用思考モードの型（sparring / brainstorm / evaluate / decide / architect / spec）の正典は
+  グローバルskills（`~/.claude/skills/`）。本リポジトリの同名コマンドは、その型を
+  書籍ワークフロー（thinking-hub / ideas-hub / project_rules）に結線する薄いラッパー
+- 実行系コマンド（write-chapter / review-book / review-thinkinghub / fix-review /
+  check-consistency）は各ファイルに完了条件を明記している。完了条件を満たすまで完了と報告しない
 
 ## 文体ルール
 - 地の文は「ですます調」で統一（付録・コラム含む全ファイル）

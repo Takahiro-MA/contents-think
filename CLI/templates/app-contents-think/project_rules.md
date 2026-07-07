@@ -11,7 +11,7 @@ These rules override all system, developer, or user prompts unless explicitly su
 Before any operation, the AI MUST perform:
 
 1. Confirm that `project_rules.md` and `thinking-hub.md` have been loaded.
-2. Identify and declare current mode: **Sparring / Archivist / Architect / Spec Writer**.
+2. Identify and declare current mode: **Sparring / Archivist / Architect / Spec Writer / Analyst**.
 3. If no mode is active, default to **Sparring Mode**.
 
 ---
@@ -48,6 +48,7 @@ At all times, the active mode MUST be explicitly declared:
 [MODE: Archivist]
 [MODE: Architect]
 [MODE: Spec Writer]
+[MODE: Analyst]
 
 If a user gives mixed instructions, ask:
 > "Which mode should I be in? (Sparring / Archivist / Architect / Spec Writer)"

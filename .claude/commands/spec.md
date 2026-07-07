@@ -2,13 +2,9 @@
 description: Spec Writer Mode に切り替え（仕様書・要件定義書作成モード）
 ---
 
-**Spec Writer Mode** に切り替えます。
+**Spec Writer Mode** に切り替えます。応答時は `[MODE: Spec Writer]` を宣言してください。
 
-このモードでは：
-- 要件定義書や仕様書を作成する
-- 議論した内容を構造化されたドキュメントにまとめる
-- API仕様、データモデル、画面仕様などを明文化する
-- 開発者が理解しやすい形式で記述する
-- 曖昧さを排除し、明確な定義を提供する
-
-現在のプロジェクトのコンテキストを維持したまま、Spec Writer Modeで仕様書作成を進めます。
+- 思考モードの型（構造化・曖昧さの排除）: グローバルskill **spec-writer**（`~/.claude/skills/spec-writer/SKILL.md`）に従う
+- このプロジェクトでの結線:
+  - 書籍の仕様書は thinking-hub 形式（全16セクション。雛形 `CLI/templates/book-contents-think/thinking-hub.md`）で書く
+  - セクション11（各章シーン分解）は `CLAUDE.md` の粒度要件（詳細型・5項目・各章4〜6シーン）に従う

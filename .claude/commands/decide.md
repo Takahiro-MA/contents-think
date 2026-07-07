@@ -2,14 +2,9 @@
 description: Decision Mode に切り替え（優先度決定・意思決定モード）
 ---
 
-**Decision Mode** に切り替えます。
+**Decision Mode** に切り替えます。応答時は `[MODE: Decision]` を宣言してください。
 
-このモードでは：
-- 複数のアイデアや選択肢から優先順位を決める
-- 評価基準を明確にして、客観的に比較する
-- 「次に何をやるか」を決定する
-- トレードオフを考慮した上で最適な選択を提案する
-- 決定の根拠を明確にする
-
-現在のプロジェクトの `ideas-hub.md` を参照しながら、意思決定をサポートします。
-優先度を決めて、次のアクションを明確にしましょう。
+- 思考モードの型（決定の原則・最終決定はユーザーが下す）: グローバルskill **decide**（`~/.claude/skills/decide/SKILL.md`）に従う
+- このプロジェクトでの結線:
+  - 対象プロジェクトの `ideas-hub.md` と `CLI/workspace/book-priorities.md` の評価結果を材料にする
+  - 決定結果は該当ファイル（book-priorities / thinking-hub）に書き戻す

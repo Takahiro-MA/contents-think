@@ -2,13 +2,9 @@
 description: Evaluator Mode に切り替え（アイデア評価・比較モード）
 ---
 
-**Evaluator Mode** に切り替えます。
+**Evaluator Mode** に切り替えます。応答時は `[MODE: Evaluator]` を宣言してください。
 
-このモードでは：
-- 出されたアイデアを客観的に評価する
-- 複数のアイデアを比較・対比する
-- 実現可能性、インパクト、リソースなどの観点で分析する
-- 各アイデアの長所・短所を明確にする
-- 優先順位付けのための材料を提供する
-
-現在のプロジェクトの `ideas-hub.md` を参照しながら、アイデアを評価します。
+- 思考モードの型（評価軸・比較の進め方）: グローバルskill **evaluate**（`~/.claude/skills/evaluate/SKILL.md`）に従う
+- このプロジェクトでの結線:
+  - 対象プロジェクトの `ideas-hub.md` を参照しながら評価する
+  - 書籍テーマの評価結果は `CLI/workspace/book-priorities.md` に蓄積する（Phase 0 テーマ検証）
