@@ -46,7 +46,7 @@ Last Updated: 2026-07-04
 | 5 | Claude Code | `claude-code/` | `../kindle2/05_claudecode/epub/` | Published |
 | 6 | Linux/CLI | `linux-cli/` | `../kindle2/07_linux-cli-book/epub/` | Published。review-log.mdあり |
 | 7 | Codex CLI | `codex-cli/` | `../kindle2/09_codex-cli-book/epub/` | Published。review-log.mdあり。付録あり |
-| 8 | Kiro CLI | `kiro-cli/` | `../kindle2/10_kiro-cli-book/epub/` | **Published（2026-07-01）**。神谷PdMとの自治体プロダクト立て直し物語。Phase 5（著者五月雨レビュー：キャラ像調整・Codex技術監査・MCP/Steering/認証の公式照合・章接続修正等を多数反映）完了 |
+| 8 | Kiro CLI | `kiro-cli/` | `../kindle2/10_kiro-cli-book/epub/` | **Published（2026-07-01）**。神谷PdMとの自治体プロダクト立て直し物語。Phase 5（著者五月雨レビュー：キャラ像調整・Codex技術監査・MCP/Steering/認証の公式照合・章接続修正等を多数反映）完了。**著者レビューログはgit履歴から復元済み**（`../kindle2/10_kiro-cli-book/epub/review-log.md`・2026-07-07） |
 
 ### 執筆進行中
 
