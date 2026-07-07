@@ -30,3 +30,15 @@
 ### 削除していないもの
 - 各書籍の実thinking-hub・原稿・review-log・kindle2の章ファイル（すべて無変更）
 - B系統の project_rules 実体（04_tdd-book / X3_LLM_in_office）
+
+## 2026-07-07 人間レビューの自動化吸収（review-automation）
+
+分析: `CLI/workspace/review-automation-analysis.md`（著者レビュー約120件の分類・先回り率見積もり約8割）
+
+- `review-book.md`: 4観点追加 — 前提知識の突合（ジュニア）／設定の因果監査・著者美学ルール照合（編集者）／デフォルト挙動・状態ライフサイクル・変動固有名の時点注記（シニア）。口癖チェックに場面整合を拡張
+- `check-consistency.md`: 項目6「機能・概念の初出マトリクス」追加（完了条件にも反映）
+- `review-thinkinghub.md`: 「シリーズ標準装備」チェック追加（タイトルフォーマット・統一価格・巻末付録・着地点）
+- `CLI/templates/book-contents-think/thinking-hub.md`: §4にタイトルフォーマット、§10に統一価格（Kindle 980/PB 2,970）を固定値として記載
+- `CLI/workspace/author-style-rules.md` **新設**: 過去指摘から美学ルール12本を収穫（出典つき）。運用ルール=「二度目がありそうな著者指摘は修正と同時に追記」
+- `book-writing-framework.md`: Phase 3b「独立モデルによる技術監査」を正式工程化（ChatGPT/Codex監査の実績2回を根拠に）
+- `CLAUDE.md`: 品質チェックリストに美学ルール照合を追加、`write-chapter.md`: 仕様読み込みに美学ルール参照を追加

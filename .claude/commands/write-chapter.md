@@ -11,6 +11,7 @@ description: thinking-hubの仕様に基づいて章を執筆
 1. **仕様読み込み**
    - 現在のプロジェクトの `thinking-hub.md` から該当章の仕様を読む
    - `CLI/workspace/shared-characters.md` でキャラクター設定を確認
+   - `CLI/workspace/author-style-rules.md`（著者美学ルール）を読み、執筆時に違反しない
 
 2. **スタイル参照**
    - `../kindle2/` 配下の既刊書籍（Git本・TDD本等）の同等の章を読み、文体・構成・トーンを把握
