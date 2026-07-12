@@ -52,7 +52,7 @@ Last Updated: 2026-07-04
 
 | # | テーマ | thinking-hub | 章数 | Phase | 通過済み | 出版先 | 備考 |
 |---|--------|-------------|------|-------|---------|-------|------|
-| 7 | Obsidian/PKM | `obsidian/` | 8 | Phase 6待ち | 1→1R→2→3→4→5→**6待ち** | `../kindle2/08_obsidian-book/epub/` | 著者レビュー24件+整合性チェック指摘を全件修正済み。付録追加。最終バランスチェック待ち |
+| 7 | Obsidian/PKM | `obsidian/` | 8 | **Phase 6完了（出版準備完了）** | 1→1R→2→3→4→5→**6完了** | `../kindle2/08_obsidian-book/epub/` | 著者レビュー24件+整合性チェック全件修正済み。**Phase 6（2026-07-12）: 3視点最終チェックでA9件/B12件を検出し全反映**（第5章Templater動機の技術矛盾・あとがき架空書名6冊・ブログ本数矛盾・月イチ矛盾等）。**残＝KDP出版作業のみ** |
 
 ### thinking-hub作成済み（初稿未着手）
 
@@ -132,7 +132,7 @@ Last Updated: 2026-07-04
 
 ### Phase別
 - Published: 8冊（最新: Kiro CLI 2026-07-01）
-- Phase 6待ち（最終バランスチェック待ち）: 1冊（Obsidian）
+- Phase 6完了（出版準備完了・KDP作業待ち）: 1冊（Obsidian）
 - Phase 3待ち（原稿 Claudeレビュー待ち）: 1冊（断酒）
 - Phase 1（thinking-hub初稿済み、Claudeレビュー未）: 1冊（モバイルアプリ入門編）
 - Phase 1A待ち（thinking-hub Claudeレビュー済・著者通読待ち）: 7冊（SQL/レガシー/睡眠/デトックス/キャリア(保留)/食事/ストレス ＋ CI/CD）
