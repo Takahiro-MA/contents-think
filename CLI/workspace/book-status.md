@@ -3,7 +3,7 @@
 > 全書籍のthinking-hub（執筆仕様書）と執筆状態を一覧管理するファイル。
 > 状態が変わったら都度更新すること。
 
-Last Updated: 2026-08-21
+Last Updated: 2026-09-07
 
 ---
 
@@ -47,12 +47,11 @@ Last Updated: 2026-08-21
 | 6 | Linux/CLI | `linux-cli/` | `../kindle2/07_linux-cli-book/epub/` | Published。review-log.mdあり |
 | 7 | Codex CLI | `codex-cli/` | `../kindle2/09_codex-cli-book/epub/` | Published。review-log.mdあり。付録あり |
 | 8 | Kiro CLI | `kiro-cli/` | `../kindle2/10_kiro-cli-book/epub/` | **Published（2026-07-01）**。神谷PdMとの自治体プロダクト立て直し物語。Phase 5（著者五月雨レビュー：キャラ像調整・Codex技術監査・MCP/Steering/認証の公式照合・章接続修正等を多数反映）完了。**著者レビューログはgit履歴から復元済み**（`../kindle2/10_kiro-cli-book/epub/review-log.md`・2026-07-07） |
+| 9 | Obsidian/PKM | `obsidian/` | `../kindle2/08_obsidian-book/epub/` | **Published（2026-09-07までにリリース完了）**。Phase 6完了後、Codex外部レビュー2巡（計19指摘）を反映してKDP出版。田中さんのPKM成長物語（3ヶ月・Vault 200ノート） |
 
 ### 執筆進行中
 
-| # | テーマ | thinking-hub | 章数 | Phase | 通過済み | 出版先 | 備考 |
-|---|--------|-------------|------|-------|---------|-------|------|
-| 7 | Obsidian/PKM | `obsidian/` | 8 | **Phase 6完了（出版準備完了）** | 1→1R→2→3→4→5→**6完了** | `../kindle2/08_obsidian-book/epub/` | 著者レビュー24件+整合性チェック全件修正済み。**Phase 6（2026-07-12）: 3視点最終チェックでA9件/B12件を検出し全反映**（第5章Templater動機の技術矛盾・あとがき架空書名6冊・ブログ本数矛盾・月イチ矛盾等）。**残＝KDP出版作業のみ** |
+（現在なし。直近: Obsidian/PKMが出版済みセクションに移動・2026-09-07）
 
 ### thinking-hub作成済み（初稿未着手）
 
@@ -124,15 +123,14 @@ Last Updated: 2026-08-21
 ## 統計
 
 ### シリーズ別
-- 田中さんシリーズ: 出版済み8冊 + 執筆中1冊 + hub済み7冊（うちNO-GO 1, 保留1, 番外編1, CI/CD 1） + 旧作4冊
+- 田中さんシリーズ: 出版済み9冊 + hub済み7冊（うちNO-GO 1, 保留1, 番外編1, CI/CD 1） + 旧作4冊
 - 藤井さんシリーズ: 初稿済み1冊 + hub済み2冊
 - ゲーム理論シリーズ: 企画段階2冊
 - その他: 4件（Ruby, 釣りマンガ, LLM理論書, サンプル）
 - アイデア段階（フォルダのみ・status未登録）: 4件（ai-driven-org, gluten-free, libre-diet, low-fat-diet）
 
 ### Phase別
-- Published: 8冊（最新: Kiro CLI 2026-07-01）
-- Phase 6完了（出版準備完了・KDP作業待ち）: 1冊（Obsidian）
+- Published: 9冊（最新: Obsidian/PKM 2026-09）
 - 企画再検討（初稿あり・Phase 0相当に差し戻し）: 1冊（断酒・2026-08-21）
 - Phase 1（thinking-hub初稿済み、Claudeレビュー未）: 1冊（モバイルアプリ入門編）
 - Phase 1A待ち（thinking-hub Claudeレビュー済・著者通読待ち）: 7冊（SQL/レガシー/睡眠/デトックス/キャリア(保留)/食事/ストレス ＋ CI/CD）
