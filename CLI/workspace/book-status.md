@@ -95,7 +95,8 @@ Last Updated: 2026-09-29
 
 | # | 書名 | コンセプト | 原稿 | 状態 | 備考 |
 |---|------|-----------|------|------|------|
-| C01 | AIの始め方、これだけでOK（まだ使っていない生成AI初心者のための入門） | `casual-line/concepts/00-ai-left-behind.md` | `../kindle2/C01_ai-left-behind/` | **出版準備完了（KDP登録待ち）**（2026-09-29） | 10章・約2.3万字。表紙・説明文・キーワード・最終EPUB作成済み。著者がKDP登録 |
+| C01 | AIの始め方、これだけでOK（まだ使っていない生成AI初心者のための入門） | `casual-line/concepts/00-ai-left-behind.md` | `../kindle2/C01_ai-left-behind/` | **Published**（2026-09-29確認） | 10章・約2.3万字・299円・KDPセレクト。**残: A+コンテンツ・広告設定** |
+| C02 | （仮）体つきが気になり始めた50代の筋トレ | `casual-line/c02-kintore-50s/thinking-hub.md` | `../kindle2/C02_kintore-50s/` | **初稿完成・著者レビュー待ち**（2026-09-29） | 9章＋参考資料・約2.45万字。最終目標は習慣化。図18枚は本文確定後 |
 | — | ハーフマラソン／ギター／神社仏閣 | `casual-line/concepts/01〜03` | — | コンセプト初稿（第2期候補） | 2026-09-24にC01を優先し繰り下げ |
 
 ---
@@ -141,7 +142,7 @@ Last Updated: 2026-09-29
 - アイデア段階（フォルダのみ・status未登録）: 4件（ai-driven-org, gluten-free, libre-diet, low-fat-diet）
 
 ### Phase別
-- Published: 9冊（最新: Obsidian/PKM 2026-09）
+- Published: 9冊（最新: Obsidian/PKM 2026-09）＋カジュアルライン1冊（C01、2026-09）
 - 企画再検討（初稿あり・Phase 0相当に差し戻し）: 1冊（断酒・2026-08-21）
 - Phase 1（thinking-hub初稿済み、Claudeレビュー未）: 1冊（モバイルアプリ入門編）
 - Phase 1A待ち（thinking-hub Claudeレビュー済・著者通読待ち）: 7冊（SQL/レガシー/睡眠/デトックス/キャリア(保留)/食事/ストレス ＋ CI/CD）
