@@ -1,0 +1,93 @@
+# 品質ゲート 第1層の閾値（gate.py が読む）
+#
+# 閾値は C01（著者が品質OKとして出版した本）の実測値と、C01/C02 の著者指摘・監査から決めた。
+# 各値の根拠（C01の実測値）は README.md の「閾値の根拠」表を正とする。
+# 本ごとの上書きは books: の下に、フォルダ名（例: C02_kintore-50s）をキーにして書く。
+# 上書きするときは、理由を1行コメントで残す。
+
+defaults:
+  stage: draft            # draft=初稿（図の仮枠・数字の照合は「参考」表示のみ）／publish=出版前（すべて判定）
+
+  # 形式
+  epubcheck_max_errors: 0
+  epubcheck_max_warnings: 0
+
+  # 文体
+  dearu_max: 0
+  long_paragraph_sentences: 4          # この文数以上の段落を「長い段落」と数える
+  long_paragraph_max: 3
+  section_end_oneliner_max_chars: 40   # 節の最後の1文段落のうち、この字数以下を「決め台詞の候補」とする
+  section_end_oneliner_per_10k_max: 11
+
+  # AIっぽさ（「」内の引用・例文・会話は数えない）
+  comfort_per_chapter_max: 3
+  comfort_total_max: 18
+  not_a_but_b_max: 3
+  noda_per_10k_max: 6                  # 「ものです」は除く
+  tsumari_max: 2
+  mushiro_max: 2
+  duplicate_sentence_min_chars: 15     # これより短い文は重複判定しない
+  near_duplicate_ratio: 0.9
+  duplicate_cross_chapter_max: 1
+  opening_same_prefix_max: 2           # 章の書き出し（最初の6字）が同じ章の数
+  opening_konoshou_max: 2              # 「この章では」で始まる章の数
+  disclaimer_max: 3                    # 表の出典欄は数えない
+  chapter_ref_per_10k_max: 16
+  chapter_ref_per_chapter_max: 8
+
+  # 参照
+  bad_chapter_ref_max: 0
+  figure_placeholder_max: 0            # publish のときだけ判定
+  missing_image_max: 0
+
+  # 数字
+  numbers_gate: true                   # false なら publish でも「参考」表示のみ
+  unknown_number_max: 0                # publish かつ事実ファイルありのときだけ判定
+  number_allow: []                     # 本が自分で決めた数字（事実ではないもの）。例: 「最初の10分」
+
+  # 字数（本文。空白・記号を除く。series-charter の 2〜2.5万字目安に幅を持たせた）
+  total_chars_min: 20000
+  total_chars_max: 30000
+
+  # 使わない言葉（全巻共通。writing-checklist 由来）
+  banned_words:
+    - いかがでしたか
+    - 急かしません
+    - あなたが決めてください
+    - ペルソナ
+    - 誰でも必ず
+
+  # 断り書き定型（writing-checklist 4. 規程集・仕様書のような文体にしない）
+  disclaimer_patterns:
+    - 本書の決め方
+    - 本書で決めた
+    - 公的な基準ではありません
+    - 約束しません
+    - 測った時間ではない
+
+  # 慰め・許可の言葉（正規表現）
+  comfort_patterns:
+    - なくていい
+    - なくても(?:いい|大丈夫|かまいません)
+    - (?:かま|構)いません
+    - (?<![0-9０-９一二三四五六七八九])十分です
+    - で十分
+    - 足ります
+    - 大丈夫です
+
+books:
+  C01_ai-left-behind:
+    stage: publish
+    # 照合先の factcheck-2026-09-28.md は検証済み項目の表で、事実パック（使ってよい数字の一覧）ではない。
+    # 出所不明の数字は一覧表示のみにして、目視で判断する（2026-09-29）
+    numbers_gate: false
+    number_allow: ["10分"]             # 本の約束「最初の10分」
+    banned_words_extra:
+      - プロンプト                     # 専門用語を初見で出さない（#2）
+      - ハルシネーション
+  C02_kintore-50s:
+    stage: draft
+    banned_words_extra:
+      - 絶対
+      - 必ず痩せ
+      - 若返

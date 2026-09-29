@@ -29,6 +29,7 @@
 | C | 一括執筆 | `kindle2/<book>/epub/*.md` | 完了条件（文字数・禁止語・数字の出所）を満たす |
 | D | 初回レビュー | レビュー結果 | P1（事実誤り）ゼロ |
 | E | ビルド環境 | `build/`、版番号付きEPUB | epubcheck 0件 |
+| E2 | 品質ゲート | `quality/gate-report.md`、`quality/rubric-score.md` | 第1層全項目合格＋第2層が合格線以上（`quality-gate/README.md`） |
 | F | 著者レビューの反復 | `review-notes.md`、各版EPUB | 著者が「本文は及第点」と判断 |
 | G | 画像（画面キャプチャ等） | `images/` | 本文の説明と画面が一致 |
 | H | 出版前の事実照合 | `factcheck-YYYY-MM-DD.md` | 要修正ゼロ（または著者判断済み） |
@@ -86,6 +87,14 @@
   - **版番号付きで出力**: `release/<slug>_vNN_YYYYMMDD.epub`。Kindle上で見分けられるよう書名にも `[vNN MM/DD]` を付ける。出版用は `--final` で印なし
 - CSS はWeb組版（字下げなし・段落間の余白・行間1.9）。カジュアルラインの読者向け
 - 著者への受け渡し: `SendUserFile` でEPUBを送り、スマホで「共有→Kindle」。Gmail 経由の自動送信は添付をbase64で流す必要があり重すぎるため使っていない（アプリパスワード方式のSMTP送信は未導入）
+
+## E2. 品質ゲート（著者に渡す前）
+
+- 著者にEPUBを渡す前に、こちらで品質を数字で確かめる。手順・合格の定義・閾値の根拠は `quality-gate/README.md` を正とする
+- **第1層**: `quality-gate/gate.py` を本のフォルダにかける（事実パックとhubを `--facts` で渡す）。全項目「合格」まで直してから次へ
+- **第2層**: 書き手と別のサブエージェントに `quality-gate/rubric.md` を渡し、ペルソナ3人で全文を通読・採点させる。合格線以上まで直す
+- 著者の指摘が出たら `quality-gate/author-feedback-log.md` に種類別に記録し、ゲートが見落とした指摘はゲート側を直す（README「ゲートの更新手順」）
+- 版を上げて再ビルドするたびに第1層をかけ直す。第2層は、構成を変えたときと著者に渡す直前にかけ直す
 
 ## F. 著者レビューの反復
 
@@ -190,6 +199,7 @@ contents-think/CLI/workspace/casual-line/
   series-charter.md          シリーズ方針
   process.md                 本書
   writing-checklist.md       執筆前チェックリスト（著者指摘から作成）
+  quality-gate/              品質ゲート（gate.py・gate-config.yaml・rubric.md・author-feedback-log.md・README.md）
   templates/casual-hub.md    hub（執筆仕様書）のひな形（12セクション）
   concepts/00-ai-left-behind.md   C01コンセプト
   concepts/04-kintore-50s.md      C02コンセプト
@@ -201,6 +211,7 @@ kindle2/C01_ai-left-behind/
   images/ images-src/        本文用画像／素材・キャプチャ・実録
   build/                     ビルドスクリプトと雛形
   release/                   版番号付きEPUB
+  quality/                   品質ゲートの結果（gate-report.md・rubric-score.md）
   review-notes.md            著者指摘の台帳（番号付き・反映状況つき）
   ai-ism-audit.md            AIっぽさ監査
   factcheck-YYYY-MM-DD.md    出版前の事実照合
